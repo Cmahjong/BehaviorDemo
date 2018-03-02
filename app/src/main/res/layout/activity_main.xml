@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yinjin.expandtextview.behaviordemo.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <TextView
+        android:background="?android:selectableItemBackground"
+        android:id="@+id/dependence"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="dependence"
+        app:layout_constraintEnd_toStartOf="@+id/scrollview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:background="?android:selectableItemBackground"
+        android:gravity="center"
+        android:id="@+id/scrollview"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="scrollview"
+        app:layout_constraintBottom_toBottomOf="@+id/dependence"
+        app:layout_constraintEnd_toStartOf="@+id/bottomSheetBehavior"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dependence"
+        app:layout_constraintTop_toTopOf="@+id/dependence"/>
+
+    <TextView
+        android:background="?android:selectableItemBackground"
+        android:gravity="center"
+        android:id="@+id/bottomSheetBehavior"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="BottomSheetBehavior"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/scrollview"
+        app:layout_constraintTop_toTopOf="@+id/scrollview"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BehaviorDemo</string>
+    <string name="title_activity_dependnt_behavior">DependntBehaviorActivity</string>
+    <string name="title_activity_bottom_sheet_behavior">BottomSheetBehaviorActivity</string>
+</resources>
